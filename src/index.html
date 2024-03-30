@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../dist/styles.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="assets/js/main.js" defer></script>
   </head>
   <body
     class="grid h-screen bg-bg-color dark:bg-dark-bg-color text-text-color dark:text-dark-text-color place-content-center"
@@ -17,7 +18,7 @@
     <div>
       <app class="grid justify-items-center" id="app">
         <button class="absolute text-2xl right-8 top-8" id="toggle-mode">
-          <!-- <span>Ativar/Desativar Light Mode</span> -->
+          <span class="sr-only">Ativar light mode</span>
           <i class="ph-bold ph-sun"></i>
           <i class="ph-bold ph-moon"></i>
         </button>
@@ -34,22 +35,34 @@
         >
           <button
             class="text-6xl cursor-pointer ph ph-play-circle text-primary-color dark:text-dark-primary-color"
-          ></button>
+          >
+            <span class="sr-only">Iniciar contador</span>
+          </button>
           <button
             class="text-6xl cursor-pointer ph ph-pause-circle text-primary-color dark:text-dark-primary-color"
-          ></button>
+          >
+            <span class="sr-only">Pausar contador</span>
+          </button>
           <button
             class="text-6xl cursor-pointer ph ph-timer text-dark-text-color dark:text-dark-text-color"
-          ></button>
+          >
+            <span class="sr-only">Ajustar contador</span>
+          </button>
           <button
             class="text-6xl cursor-pointer ph ph-stop-circle text-text-color dark:text-dark-text-color"
-          ></button>
+          >
+            <span class="sr-only">Reiniciar contador</span>
+          </button>
           <button
             class="text-6xl cursor-pointer ph ph-speaker-none text-dark-text-color dark:text-dark-text-color"
-          ></button>
+          >
+            <span class="sr-only">Iniciar música</span>
+          </button>
           <button
             class="text-6xl cursor-pointer ph ph-speaker-high text-primary-color dark:text-dark-primary-color"
-          ></button>
+          >
+            <span class="sr-only">Parar música</span>
+          </button>
         </section>
       </app>
     </div>

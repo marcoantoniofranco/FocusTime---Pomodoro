@@ -554,6 +554,18 @@ video {
   --tw-contain-style:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -564,6 +576,10 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.m-\[-1px\] {
+  margin: -1px;
 }
 
 .mt-4 {
@@ -582,8 +598,22 @@ video {
   height: 100vh;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .place-content-center {
@@ -598,8 +628,16 @@ video {
   gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-\[999rem\] {
   border-radius: 999rem;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .bg-bg-color {
@@ -608,6 +646,10 @@ video {
 
 .bg-controls-bg-color {
   background-color: hsla(194, 0%, 14%, 1);
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-10 {
