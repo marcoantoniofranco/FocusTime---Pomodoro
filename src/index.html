@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo pomodoro" />
+    <title>FocusTimer - Pomodoro</title>
+
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-svg" />
+
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body
+    class="grid h-screen bg-bg-color dark:bg-dark-bg-color text-text-color dark:text-dark-text-color place-content-center"
+  >
+    <div>
+      <app class="grid justify-items-center" id="app">
+        <button class="absolute text-2xl right-8 top-8" id="toggle-mode">
+          <!-- <span>Ativar/Desativar Light Mode</span> -->
+          <i class="ph-bold ph-sun"></i>
+          <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <section id="timer" class="flex font-sans font-bold text-8xl">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section
+          id="controls"
+          class="flex gap-4 px-10 py-6 mt-4 bg-controls-bg-color dark:bg-dark-controls-bg-color rounded-[999rem]"
+        >
+          <button
+            class="text-6xl cursor-pointer ph ph-play-circle text-primary-color dark:text-dark-primary-color"
+          ></button>
+          <button
+            class="text-6xl cursor-pointer ph ph-pause-circle text-primary-color dark:text-dark-primary-color"
+          ></button>
+          <button
+            class="text-6xl cursor-pointer ph ph-timer text-dark-text-color dark:text-dark-text-color"
+          ></button>
+          <button
+            class="text-6xl cursor-pointer ph ph-stop-circle text-text-color dark:text-dark-text-color"
+          ></button>
+          <button
+            class="text-6xl cursor-pointer ph ph-speaker-none text-dark-text-color dark:text-dark-text-color"
+          ></button>
+          <button
+            class="text-6xl cursor-pointer ph ph-speaker-high text-primary-color dark:text-dark-primary-color"
+          ></button>
+        </section>
+      </app>
+    </div>
+  </body>
+</html>
