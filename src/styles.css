@@ -2,21 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html.running .ph-play-circle,
-html.running .ph-timer {
-  @apply hidden;
-}
+@layer components {
+  html.running .ph-play-circle,
+  html.running .ph-timer {
+    @apply hidden;
+  }
 
-html:not(.running) .ph-pause-circle,
-html:not(.running) .ph-stop-circle {
-  @apply hidden;
-}
+  html:not(.running) .ph-pause-circle,
+  html:not(.running) .ph-stop-circle {
+    @apply hidden;
+  }
 
-html:not(.music-on) .ph-speaker-high {
-  @apply hidden;
-}
+  html.music-on .ph-speaker-none {
+    @apply hidden;
+  }
 
-html.dark .ph-moon,
-html:not(.dark) .ph-sun {
-  @apply hidden;
+  html:not(.music-on) .ph-speaker-high {
+    @apply hidden;
+  }
+
+  html.dark .ph-moon,
+  html:not(.dark) .ph-sun {
+    @apply hidden;
+  }
 }

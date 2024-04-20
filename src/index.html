@@ -13,7 +13,7 @@
     <script type="module" src="assets/js/main.js" defer></script>
   </head>
   <body
-    class="grid h-screen bg-bg-color dark:bg-dark-bg-color text-text-color dark:text-dark-text-color place-content-center"
+    class="grid h-screen transition duration-700 ease-in-out bg-bg-color dark:bg-dark-bg-color text-text-color dark:text-dark-text-color place-content-center"
   >
     <div>
       <app class="grid justify-items-center" id="app">
@@ -34,31 +34,37 @@
           class="flex gap-4 px-10 py-6 mt-4 bg-controls-bg-color dark:bg-dark-controls-bg-color rounded-[999rem]"
         >
           <button
+            data-action="toggleRunning"
             class="text-6xl cursor-pointer ph ph-play-circle text-primary-color dark:text-dark-primary-color"
           >
             <span class="sr-only">Iniciar contador</span>
           </button>
           <button
+            data-action="toggleRunning"
             class="text-6xl cursor-pointer ph ph-pause-circle text-primary-color dark:text-dark-primary-color"
           >
             <span class="sr-only">Pausar contador</span>
           </button>
           <button
+            data-action="set"
             class="text-6xl cursor-pointer ph ph-timer text-dark-text-color dark:text-dark-text-color"
           >
             <span class="sr-only">Ajustar contador</span>
           </button>
           <button
+            data-action="reset"
             class="text-6xl cursor-pointer ph ph-stop-circle text-text-color dark:text-dark-text-color"
           >
             <span class="sr-only">Reiniciar contador</span>
           </button>
           <button
+            data-action="toggleMusic"
             class="text-6xl cursor-pointer ph ph-speaker-none text-dark-text-color dark:text-dark-text-color"
           >
             <span class="sr-only">Iniciar música</span>
           </button>
           <button
+            data-action="toggleMusic"
             class="text-6xl cursor-pointer ph ph-speaker-high text-primary-color dark:text-dark-primary-color"
           >
             <span class="sr-only">Parar música</span>

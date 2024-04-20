@@ -554,6 +554,29 @@ video {
   --tw-contain-style:  ;
 }
 
+html.running .ph-play-circle,
+  html.running .ph-timer {
+  display: none;
+}
+
+html:not(.running) .ph-pause-circle,
+  html:not(.running) .ph-stop-circle {
+  display: none;
+}
+
+html.music-on .ph-speaker-none {
+  display: none;
+}
+
+html:not(.music-on) .ph-speaker-high {
+  display: none;
+}
+
+html.dark .ph-moon,
+  html:not(.dark) .ph-sun {
+  display: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -578,10 +601,6 @@ video {
   top: 2rem;
 }
 
-.m-\[-1px\] {
-  margin: -1px;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -598,22 +617,8 @@ video {
   height: 100vh;
 }
 
-.h-\[1px\] {
-  height: 1px;
-}
-
-.w-\[1px\] {
-  width: 1px;
-}
-
 .cursor-pointer {
   cursor: pointer;
-}
-
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .place-content-center {
@@ -628,16 +633,8 @@ video {
   gap: 1rem;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-\[999rem\] {
   border-radius: 999rem;
-}
-
-.border-0 {
-  border-width: 0px;
 }
 
 .bg-bg-color {
@@ -646,10 +643,6 @@ video {
 
 .bg-controls-bg-color {
   background-color: hsla(194, 0%, 14%, 1);
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-10 {
@@ -666,6 +659,11 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -674,11 +672,6 @@ video {
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -697,23 +690,20 @@ video {
   color: #hsla(194, 5%, 7%, 1);
 }
 
-html.running .ph-play-circle,
-html.running .ph-timer {
-  display: none;
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-html:not(.running) .ph-pause-circle,
-html:not(.running) .ph-stop-circle {
-  display: none;
+.duration-700 {
+  transition-duration: 700ms;
 }
 
-html:not(.music-on) .ph-speaker-high {
-  display: none;
-}
-
-html.dark .ph-moon,
-html:not(.dark) .ph-sun {
-  display: none;
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark\:bg-dark-bg-color:is(.dark *) {
