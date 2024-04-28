@@ -554,29 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-html.running .ph-play-circle,
-  html.running .ph-timer {
-  display: none;
-}
-
-html:not(.running) .ph-pause-circle,
-  html:not(.running) .ph-stop-circle {
-  display: none;
-}
-
-html.music-on .ph-speaker-none {
-  display: none;
-}
-
-html:not(.music-on) .ph-speaker-high {
-  display: none;
-}
-
-html.dark .ph-moon,
-  html:not(.dark) .ph-sun {
-  display: none;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -611,6 +588,10 @@ html.dark .ph-moon,
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
